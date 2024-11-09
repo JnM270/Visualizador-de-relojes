@@ -1,0 +1,41 @@
+.body-digitalClock{
+    background-color: #28345c; /* Fondo tipo tema nocturno */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 110vh;
+    width: 110vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+  }
+  
+  .digitalClock {
+    height: 150px;
+    width: 300px;
+    background-color: #4960ac; /* Fondo oscuro para el reloj */
+    color: #ebf5eb; /* Color del texto del reloj */
+    border: 15px solid #ebf5eb;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Sombreado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-size: 28px;
+    font-weight: bold; /* Fuente en negrita */
+  }
+  
+  .digitalTime {
+    display: flex;
+  }
+  
+  .ampm {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  
+  .time-slider{
+   width: 100%;
+   margin-top: 80px;
+
+  }

@@ -1,0 +1,23 @@
+
+    <div class="analogClock-body">
+        <div class="analogClock">
+            <div class="faceClock">
+
+                <!-- Rotación de las agujas del reloj -->
+       
+                <div class="hand hour" [ngStyle]="{'transform': 'rotate(' + (hora * 30 + min / 2) + 'deg)'}"></div>
+                <div class="hand minute" [ngStyle]="{'transform': 'rotate(' + (min * 6) + 'deg)'}"></div>
+                <div class=" hand second" [ngStyle]="{'transform': 'rotate(' + (seg * 6) + 'deg)'}"></div>
+                
+                <!-- Números del reloj -->
+                <div class="numberClock" style="top: 10%; left: 50%; transform: translate(-50%, -50%);">12</div>
+                <div class="numberClock" style="top: 50%; left: 90%; transform: translate(-50%, -50%);">3</div>
+                <div class="numberClock" style="top: 90%; left: 50%; transform: translate(-50%, -50%);">6</div>
+                <div class="numberClock" style="top: 50%; left: 10%; transform: translate(-50%, -50%);">9</div>
+                
+            </div>
+        </div>
+    </div>
+
+  
+

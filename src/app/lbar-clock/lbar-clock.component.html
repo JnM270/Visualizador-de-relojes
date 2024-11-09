@@ -1,0 +1,13 @@
+<div class="lbar-body">
+<div class="lbar-container">
+  <div class="load-bar">
+    <div class="lbar-sec" [style.width.%]="segundos * (100 / 60)"></div>
+  </div>
+  <div class="load-bar">
+    <div class="lbar-min" [style.width.%]="minutos * (100 / 60)"></div>
+  </div>
+  <div class="load-bar">
+    <div class="lbar-hours" [style.width.%]="horas * (100 / 24)"></div>
+  </div>
+</div>
+</div>

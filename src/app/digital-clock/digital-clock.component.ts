@@ -1,7 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 //import { TimeSliderComponent } from '../time-slider/time-slider.component';
 
-
 @Component({
   selector: 'app-digital-clock',
   standalone: true,
@@ -17,15 +16,12 @@ export class DigitalClockComponent implements OnInit{
     public seg: string;
     public ampm: string;
    
-
     constructor() { 
 
       this.hora = '';
       this.min = '';
       this.seg = '';
       this.ampm = '';
- 
-
     }
     
     ngOnInit() {
@@ -49,8 +45,6 @@ export class DigitalClockComponent implements OnInit{
     const segundos = dato.getSeconds();
     this.seg = segundos < 10 ? '0' + segundos: segundos.toString();
      }
-
-    
     }
 
 @Component({

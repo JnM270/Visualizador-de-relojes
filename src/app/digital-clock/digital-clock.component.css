@@ -1,5 +1,5 @@
 .body-digitalClock{
-    background-color: #28345c; /* Fondo tipo tema nocturno */
+    background-color: #28345c; 
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -12,17 +12,17 @@
   .digitalClock {
     height: 150px;
     width: 300px;
-    background-color: #4960ac; /* Fondo oscuro para el reloj */
-    color: #ebf5eb; /* Color del texto del reloj */
+    background-color: #4960ac;
+    color: #ebf5eb; 
     border: 15px solid #ebf5eb;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Sombreado */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
     font-size: 28px;
-    font-weight: bold; /* Fuente en negrita */
+    font-weight: bold; 
   }
   
   .digitalTime {

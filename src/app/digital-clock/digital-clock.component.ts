@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 //import { TimeSliderComponent } from '../time-slider/time-slider.component';
-
+ 
 @Component({
   selector: 'app-digital-clock',
   standalone: true,

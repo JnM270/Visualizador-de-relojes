@@ -1,0 +1,30 @@
+<div class="bubbleClock-body">
+<div class="bubbleClock-container">
+  <!-- Burbujas de horas -->
+  <div class="bubble-column">
+    <div class="bubble-row" *ngFor="let row of [0, 1, 2, 3]">
+      <div *ngFor="let col of [0, 1, 2, 3, 4, 5]" class="bubble" [class.exploded]="!horas[row * 6 + col]">
+        <img *ngIf="horas[row * 6 + col]" src="img/burbuja03.png" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Burbujas de minutos -->
+  <div class="bubble-column">
+    <div class="bubble-row" *ngFor="let row of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]">
+      <div *ngFor="let col of [0, 1, 2, 3, 4]" class="bubble" [class.exploded]="!minutos[row * 5 + col]">
+        <img *ngIf="minutos[row * 5 + col]" src="img/burbuja04.png" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Burbujas de segundos -->
+  <div class="bubble-column">
+    <div class="bubble-row" *ngFor="let row of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]">
+      <div *ngFor="let col of [0, 1, 2, 3, 4]" class="bubble" [class.exploded]="!segundos[row * 5 + col]">
+        <img *ngIf="segundos[row * 5 + col]" src="img/burbuja02.png" />
+      </div>
+    </div>
+  </div>
+</div>
+</div>

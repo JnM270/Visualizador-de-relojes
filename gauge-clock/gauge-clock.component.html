@@ -1,0 +1,31 @@
+<div class="gauge-background">
+<div class="gauge-container">
+
+  <!-- Gauge de horas -->
+  <div class="gauge">
+    <div class="gauge-text">Horas</div>
+    <div class="gauge_body">
+      <div class="gauge_fill hours" [ngStyle]="{'transform': 'rotate(' + convertToDegrees(horas, 24) + 'deg)'}"></div>
+      <div class="gauge_cover"></div>
+    </div>
+  </div>
+
+  <!-- Gauge de minutos -->
+  <div class="gauge">
+    <div class="gauge-text">Minutos</div>
+    <div class="gauge_body">
+      <div class="gauge_fill minutes" [ngStyle]="{'transform': 'rotate(' + convertToDegrees(minutos, 60) + 'deg)'}"></div>
+      <div class="gauge_cover"></div>
+    </div>
+  </div>
+
+  <!-- Gauge de segundos -->
+  <div class="gauge">
+    <div class="gauge-text">Segundos</div>
+    <div class="gauge_body">
+      <div class="gauge_fill seconds" [ngStyle]="{'transform': 'rotate(' + convertToDegrees(segundos, 60) + 'deg)'}"></div>
+      <div class="gauge_cover"></div>
+    </div>
+  </div>
+</div>
+</div>
